@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braille-Translator</title>
-    <link rel="stylesheet" href="../css/styles.css" type = "text/css">
-    <script src="scripts/script.js">
+    <link rel="stylesheet" href="/styles/styles.css" type = "text/css">
+    <script src="/scripts/script.js">
     </script>
+    <script src="/scripts/mainpage.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="content">
-        <div class="body-content">
-            <h1>Braille-Translator</h1>
-            <form class="translate" action="#">
-                <p>Type in the text you would like to translate in the form below</p>
-                <div class ="translate-main">
+<nav class="navbar">
+    <ul>
+        <li><a href="main">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="team">Our Team</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+</nav>
+<section class="content" id="home">
+    <div class="body-content" id="top-margin">
+        <h1>Braille Transcriber</h1>
+        <form class="translate" action="#">
+            <p>Type in the text you would like to translate in the form below</p>
+            <div class ="translate-main">
+                <a href="#" id="translate-submit"><span></span>></a>
+                <div class="translate-left">
                     <div class="translate-heading">
                         <div class = "translate-heading-side">
                             <div id="translate-heading-side-margin">
@@ -32,6 +35,16 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="translate-main-box">
+                        <a onclick="document.getElementById('input-text-area').value = ''" id="clear-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/></svg>
+                        </a>
+                        <textarea id="input-text-area"></textarea>
+                    </div>
+                </div>
+                <div class="translate-right">
+                    <div class="translate-heading">
                         <div class = "translate-heading-side">
                             <div id="translate-heading-side-margin">
                                 <p onclick="dropdown_visible()" id="braille-selected">
@@ -49,40 +62,33 @@
                         </div>
                     </div>
                     <div class="translate-main-box">
-                        <a href="#" id="translate-submit"><span></span>></a>
-                        <div class="translate-left">
-                            <a href="" id="clear-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/></svg>
-                            </a>
-                            <textarea></textarea>
-                        </div>
-                        <div class="translate-right">
-                            <div class="loader"></div>
-                            <textarea ></textarea>
-                            <div class="result">
-                                <ul>
-                                    <li>
-                                        <a href="#" aria-label="copy text">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.53 8L14 2.47a.75.75 0 0 0-.53-.22H11A2.75 2.75 0 0 0 8.25 5v1.25H7A2.75 2.75 0 0 0 4.25 9v10A2.75 2.75 0 0 0 7 21.75h7A2.75 2.75 0 0 0 16.75 19v-1.25H17A2.75 2.75 0 0 0 19.75 15V8.5a.75.75 0 0 0-.22-.5Zm-5.28-3.19l2.94 2.94h-2.94Zm1 14.19A1.25 1.25 0 0 1 14 20.25H7A1.25 1.25 0 0 1 5.75 19V9A1.25 1.25 0 0 1 7 7.75h1.25V15A2.75 2.75 0 0 0 11 17.75h4.25ZM17 16.25h-6A1.25 1.25 0 0 1 9.75 15V5A1.25 1.25 0 0 1 11 3.75h1.75V8.5a.76.76 0 0 0 .75.75h4.75V15A1.25 1.25 0 0 1 17 16.25Z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" aria-label="copy text">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5l5 5l5-5m-5 5V3"/></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22Z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="loader"></div>
+                        <textarea ></textarea>
+                        <div class="result">
+                            <ul>
+                                <li>
+                                    <a href="#" aria-label="copy text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.53 8L14 2.47a.75.75 0 0 0-.53-.22H11A2.75 2.75 0 0 0 8.25 5v1.25H7A2.75 2.75 0 0 0 4.25 9v10A2.75 2.75 0 0 0 7 21.75h7A2.75 2.75 0 0 0 16.75 19v-1.25H17A2.75 2.75 0 0 0 19.75 15V8.5a.75.75 0 0 0-.22-.5Zm-5.28-3.19l2.94 2.94h-2.94Zm1 14.19A1.25 1.25 0 0 1 14 20.25H7A1.25 1.25 0 0 1 5.75 19V9A1.25 1.25 0 0 1 7 7.75h1.25V15A2.75 2.75 0 0 0 11 17.75h4.25ZM17 16.25h-6A1.25 1.25 0 0 1 9.75 15V5A1.25 1.25 0 0 1 11 3.75h1.75V8.5a.76.76 0 0 0 .75.75h4.75V15A1.25 1.25 0 0 1 17 16.25Z"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="copy text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5l5 5l5-5m-5 5V3"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22Z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-    </section>
+
+    </div>
+    </form>
+    </div>
+</section>
 </body>
 </html>

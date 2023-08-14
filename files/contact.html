@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About-Braille</title>
     <link rel="stylesheet" href="/styles/styles.css" type = "text/css">
-    <script src="/scripts/script.js"></script>
+    <script src="/scripts/script.js">
+    </script>
+    <script src="/scripts/mainpage.js"></script>
 </head>
 <body>
-<nav class="navbar">
-    <ul>
-        <li><a href="main">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="team">Our Team</a></li>
-        <li><a href="contact">Contact</a></li>
-    </ul>
-</nav>
-<section class="content-contact">
-    <h1>Contact</h1>
-    <div class="body-content">
-        <p id="contact-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, modi.</p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="main">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="team">Our Team</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="content-contact">
+        <h1>Contact</h1>
+        <div class="body-content">
+            <p id="contact-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, modi.</p>
         <form class="form" action="#">
             <div id="fname">
                 <p>First name</p>
@@ -35,14 +37,14 @@
             </div>
             <div id="feedback">
                 <p>Type in your feedback or comment.</p>
-                <textarea id="feedback-input">Type here...</textarea>
+                <textarea id="feedback-input" onfocus="this.value=''">Type here...</textarea>
                 <br>
                 <a href="mailto:carolzjwang@gmail.com,eysiao3@gmail.com,gaoabigail0@gmail.com,tylerjamesgu@gmail.com">
                     <span id="bg-span"></span><span id="hover-span"></span>Submit
                 </a>
             </div>
         </form>
-    </div>
-</section>
+        </div>
+    </section>
 </body>
 </html>

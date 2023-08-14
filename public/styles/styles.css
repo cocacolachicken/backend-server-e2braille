@@ -3,20 +3,27 @@
     margin:0;
     padding:0;
     font-family:'Space Grotesk', sans-serif;
+    overflow-x;
 }
 a{
     font-size: 16px;
     cursor: pointer;
+    font-family:'Open Sans', sans-serif;
 }
-p{
+p, textarea{
     font-size: 18px;
     font-family:'Open Sans', sans-serif;
 }
 textarea{
+    padding: 10px;
     resize: none;
+    font-size: 16px;
+}
+input[type=text]{
+    padding: 0 10px;
+    font-size: 16px;
 }
 
-/* background for about page */
 .banner{
     position:absolute;
     top: 0;
@@ -24,6 +31,7 @@ textarea{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/bg-img.jpg);
     background-size: cover;
+    background-repeat: repeat;
     background-position: center;
 }
 
@@ -31,7 +39,8 @@ textarea{
     display: flex;
     width: 100%;
     justify-content:left;
-    background-color:   rgb(248, 230, 202);
+    /* background-color:   rgb(248, 230, 202); */
+    background-color:rgba(252, 253, 253, 0.7);
     position: absolute;
     top: 0;
 }
@@ -52,7 +61,8 @@ textarea{
 }
 
 .navbar ul li a:hover{
-    background-color:rgb(243, 219, 171);
+    /* background-color:   rgb(248, 230, 202); */
+    /* background-color:rgb(243, 219, 171); */
     transition: 0.2s;
     font-weight: 900;
 }
@@ -92,16 +102,20 @@ textarea{
     width: 100vw;
     height: 100vh;
     align-items: center;
-    background-color: rgb(241, 238, 238);
 }
-
+.body-content{
+    width: 1000px;
+}
 .body-content h1{
     font-size: 55px;
     text-align: center;
     margin-bottom: 5%;
 }
-.body-content{
-    width: 1000px;
+#home{
+    background-color: rgb(241, 238, 238);
+}
+#about{
+    height: 200vh;
 }
 .translate{
     font-size: 16px;
@@ -118,6 +132,7 @@ textarea{
 }
 
 .translate-main{
+    box-sizing: border-box;
     width: 100%;
     height: 500px;
     display: flex;
@@ -186,7 +201,6 @@ textarea{
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 10px;
     background-color:lightblue;
 }
 
@@ -233,6 +247,7 @@ textarea{
     height:100%;
     position: relative;
     display: flex;
+    overflow-y: hidden;
 }
 .translate-heading-side div{
     align-self: center;
@@ -252,11 +267,11 @@ textarea{
     justify-self: center;
 }
 .translate-heading-side div:hover #braille-selected{
-    color:rgb(82, 82, 218);
+    color:rgb(82, 82, 218); 
     /*10% color */
 }
 .translate-heading-side div:hover #downarrow-fill{
-    fill:rgb(82, 82, 218);
+    fill:rgb(82, 82, 218); 
 }
 
 #braille-option:hover{
@@ -367,7 +382,7 @@ textarea{
     right: 0;
     bottom: 0;
     width: 100% !important;
-    height: 40px !important;
+    height: 40px !important; 
 }
 
 .result ul{
@@ -445,7 +460,7 @@ textarea{
 }
 
 #fname input[type=text]{
-    width:100%;
+    width: 90%;
     height: 20px;
 }
 
@@ -453,11 +468,11 @@ textarea{
     display:inline-block;
     width:40%;
     margin-left: 5%;
-    height: 40px;
+    height: auto;
 }
 
 #lname input[type=text]{
-    width:100%;
+    width:90%;
     height: 20px;
 }
 
@@ -526,6 +541,24 @@ textarea{
 #top-margin{
     margin-top: 150px
 }
+#info-para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 1vw;
+    background-color:rgba(252, 253, 253, 0.7);
+    height: auto;
+    padding: 3%;
+
+}
+#info-para div{
+    width: 80%;
+}
+#info-para div p{
+    margin-bottom: 10px;
+}
 @media (max-width: 1280px) {
     .body-content {
         width:70%;
@@ -540,14 +573,20 @@ textarea{
     .body-content {
         width: 80%;
         height: 100vh;
-        background-color: rgb(68, 255, 0);
+        /* background-color: rgb(68, 255, 0); */
     }
     .form textarea{
         height: 120px;
     }
+    #fname input[type=text], #lname input[type=text]{
+        width:85%;
+    }
     p, a{
         font-size: 16px;
     }
+    textarea, input[type=text]{
+        font-size: 14px;
+    } 
     .content h1{
         font-size: 36px;
     }
@@ -562,7 +601,7 @@ textarea{
     .body-content {
         width: 80%;
         height: 100vh;
-        background-color: rgb(189, 57, 0);
+        /* background-color: rgb(189, 57, 0); */
     }
     .translate-main{
         flex-direction: column;
@@ -592,6 +631,9 @@ textarea{
     p, a{
         font-size: 16px;
     }
+    textarea, input[type=text]{
+        font-size: 14px;
+    } 
     .content h1{
         font-size: 36px;
     }
@@ -609,10 +651,13 @@ textarea{
         height: 30vh;
     }
     #email input[type=text], #feedback textarea{
-        width:100%;
+        width:90%;
     }
     #fname, #lname{
         width: 45%;
+    }
+    #fname input[type=text], #lname input[type=text]{
+        width:80%;
     }
     #top-margin{
         margin-top: 100px;
@@ -621,9 +666,9 @@ textarea{
 
 @media (max-width: 412px) {
     .body-content {
-        width:300px;
-        height: 100vh;
-        background-color: orange;
+      width:300px;
+      height: 100vh;
+      /* background-color: orange; */
     }
     .form textarea{
         height: 120px;
@@ -634,6 +679,9 @@ textarea{
     p, a, .navbar ul li a{
         font-size: 14px;
     }
+    textarea, input[type=text]{
+        font-size: 14px;
+    } 
     .navbar{
         justify-content:center;
     }
@@ -644,7 +692,7 @@ textarea{
         padding: 18px 10px;
     }
     #email input[type=text], #feedback textarea{
-        width:100%;
+        width:80%;
     }
     #fname, #lname{
         width: 45%;
@@ -654,7 +702,7 @@ textarea{
 @media (max-width: 360px) {
     .body-content {
         width:85%;
-        background-color: red;
+        /* background-color: red; */
     }
     .form textarea{
         height: 80px;
@@ -662,6 +710,9 @@ textarea{
     p, a, .navbar ul li a{
         font-size: 14px;
     }
+    textarea, input[type=text]{
+        font-size: 14px;
+    } 
     .content h1{
         font-size: 28px;
     }
@@ -673,6 +724,9 @@ textarea{
     }
     .navbar ul li a{
         padding: 20px 10px;
+    }
+    #email input[type=text], #feedback textarea{
+        width:90%;
     }
     #feedback textarea{
         height: 20vh;

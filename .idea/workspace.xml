@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6ce7e45e-a454-4921-a069-8f071e0ecd50" name="Changes" comment="commit that works!!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/html/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scripts/mainpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scripts/mainpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,32 +33,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wjsn/Documents/m/backend/files/css&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "18.16.0",
+    "javascript.nodejs.core.library.typings.version": "18.16.0",
+    "last_opened_file_path": "/Users/wjsn/Documents/m/backend/files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/files/css" />
-      <recent name="$PROJECT_DIR$/files/html" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/public/styles" />
+      <recent name="$PROJECT_DIR$/files/css" />
+      <recent name="$PROJECT_DIR$/files/html" />
       <recent name="$PROJECT_DIR$/public/scripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -95,7 +97,7 @@
       <workItem from="1691981837615" duration="1268000" />
       <workItem from="1691983137054" duration="3569000" />
       <workItem from="1692017929563" duration="4187000" />
-      <workItem from="1692025994531" duration="946000" />
+      <workItem from="1692025994531" duration="1868000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1691893845804</created>
@@ -174,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692022837228</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit that works!!!!">
+      <created>1692027052047</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692027052047</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
