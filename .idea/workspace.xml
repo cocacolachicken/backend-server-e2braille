@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ce7e45e-a454-4921-a069-8f071e0ecd50" name="Changes" comment="commit" />
+    <list default="true" id="6ce7e45e-a454-4921-a069-8f071e0ecd50" name="Changes" comment="commit to test deploy">
+      <change afterPath="$PROJECT_DIR$/files/html/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/html/scripts/mainpage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/html/scripts/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/newHTML/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/html/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/html/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/html/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/html/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/html/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/html/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/mainpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scripts/mainpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,30 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.16.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wjsn/Documents/m/backend/files&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "18.16.0",
+    "javascript.nodejs.core.library.typings.version": "18.16.0",
+    "last_opened_file_path": "/Users/wjsn/Documents/m/backend/files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files" />
+      <recent name="$PROJECT_DIR$/files/html" />
       <recent name="$PROJECT_DIR$/public/styles" />
+      <recent name="$PROJECT_DIR$/public/scripts" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -85,6 +105,9 @@
       <workItem from="1691955889511" duration="71000" />
       <workItem from="1691955963142" duration="4235000" />
       <workItem from="1691972706868" duration="119000" />
+      <workItem from="1691973832269" duration="3341000" />
+      <workItem from="1691981837615" duration="1268000" />
+      <workItem from="1691983137054" duration="1054000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1691893845804</created>
@@ -128,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691972720478</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit to test deploy">
+      <created>1691979144970</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691979144970</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +170,7 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="commit to test deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit to test deploy" />
   </component>
 </project>
