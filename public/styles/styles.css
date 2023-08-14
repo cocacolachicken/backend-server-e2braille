@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
     font-family:'Space Grotesk', sans-serif;
-    overflow-x;
 }
 a{
     font-size: 16px;
@@ -31,7 +30,6 @@ input[type=text]{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/bg-img.jpg);
     background-size: cover;
-    background-repeat: repeat;
     background-position: center;
 }
 
@@ -113,9 +111,15 @@ input[type=text]{
 }
 #home{
     background-color: rgb(241, 238, 238);
+    overflow: auto;
 }
+
+#aboutbody {
+    background-color: rgb(241, 238, 238);
+}
+
 #about{
-    height: 200vh;
+    overflow: auto;
 }
 .translate{
     font-size: 16px;
@@ -140,7 +144,6 @@ input[type=text]{
     position: relative;
     justify-content: center;
     margin-bottom: 18px;
-    overflow: hidden;
     border-radius: 15px;
     border: solid 2px black;
     background-color: aliceblue;
@@ -281,11 +284,10 @@ input[type=text]{
     cursor: pointer;
 }
 .loader{
-    /* visibility: hidden; */
     position: absolute;
     width:100%;
     height:100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     /* 15% color */
@@ -311,14 +313,15 @@ input[type=text]{
 #language-dropdown{
     visibility: hidden;
     position:absolute;
-    top: 100%;
-    left: 0;
     width:200px;
     height:40px;
     background-color: white;
     z-index: 1;
     border-radius: 1%;
     margin-left:10px;
+    top: 40px;
+    left: 0;
+    overflow: hidden
 }
 #language-dropdown div{
     position: relative;
@@ -328,6 +331,7 @@ input[type=text]{
     height:40px;
     border-radius: 1%;
     justify-content:baseline;
+    overflow: hidden;
 }
 
 #language-dropdown p{
@@ -547,9 +551,9 @@ input[type=text]{
     align-items: center;
     justify-content: center;
     width: 80%;
+    height: 80%;
     border-radius: 1vw;
     background-color:rgba(252, 253, 253, 0.7);
-    height: auto;
     padding: 3%;
 
 }
@@ -562,7 +566,6 @@ input[type=text]{
 @media (max-width: 1280px) {
     .body-content {
         width:70%;
-        height: 100vh;
     }
     .translate-main{
         height:450px;
@@ -572,7 +575,6 @@ input[type=text]{
 @media (max-width: 1000px) {
     .body-content {
         width: 80%;
-        height: 100vh;
         /* background-color: rgb(68, 255, 0); */
     }
     .form textarea{
@@ -600,7 +602,6 @@ input[type=text]{
 @media (max-width: 700px) {
     .body-content {
         width: 80%;
-        height: 100vh;
         /* background-color: rgb(189, 57, 0); */
     }
     .translate-main{
@@ -667,7 +668,6 @@ input[type=text]{
 @media (max-width: 412px) {
     .body-content {
       width:300px;
-      height: 100vh;
       /* background-color: orange; */
     }
     .form textarea{

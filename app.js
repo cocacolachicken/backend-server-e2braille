@@ -14,7 +14,7 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/files/main.html'));
+    res.sendFile(path.join(__dirname, '/files/newHTML/main.html'));
 })
 
 app.get('/about', (req, res) => {
