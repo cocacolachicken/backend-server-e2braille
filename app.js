@@ -1,3 +1,5 @@
+const TR_API_URL = 'https://api-english2braille.onrender.com';
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -31,9 +33,19 @@ app.get('/main', (req, res) => {
 })
 
 
-app.post('/translate', bodyParser.json(), (req, res) => {
+app.post('/translate', bodyParser.json(), async (req, res) => {
     console.log(req.body);
-    res.json("⠠⠔⠀⠠⠏⠁⠎⠁⠙⠢⠁⠀⠎⠬⠔⠄⠂⠀⠦⠠⠙⠂⠀⠙⠤⠙⠤⠙⠂⠀⠙⠴");
+    let fet = await fetch(`${TR_API_URL}/translate`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'applications/json'
+        },
+        body: JSON.stringify({translate : req.body.translate})
+    })
+
+    let rep = await fet.json();
+
+    res.json(rep.response);
 });
 
 app.post('/getPDF', bodyParser.json(), async (req, res) => {
