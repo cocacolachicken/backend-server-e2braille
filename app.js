@@ -66,7 +66,7 @@ app.post('/translate1', bodyParser.json(), async (req, res) => {
 
         let rep = await fet.json();
 
-        res.json(rep.response);
+        res.json(rep.response.replace(/⠀⠀⠀⠀⠀/g, '\n'));
     } catch (e) {
         res.json('ERROR - SORRY ABOUT THAT');
     }
