@@ -6,7 +6,10 @@ window.onload = () => {
 
     document.getElementById('translate-submit').addEventListener('click', async () => {
         document.getElementById('loader').style.display = 'flex';
-        const request = await fetch ("/translate", {
+        let url = '/translate';
+        if (selectedBraille) url = '/translate1';
+
+        const request = await fetch (url, {
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'

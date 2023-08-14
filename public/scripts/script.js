@@ -1,5 +1,5 @@
 let visible = false;
-let selectedBraille = false; //true for braille 1
+var selectedBraille = false; //true for braille 1
 function dropdown_visible(){
     if(visible==true){
         var visibility = "hidden";

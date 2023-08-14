@@ -1,5 +1,5 @@
 const TR_API_URL = 'https://api-english2braille.onrender.com';
-
+// const TR_API_URL = 'http://127.0.0.1:5000';
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -11,6 +11,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static('public'));
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/files/main.html'));
@@ -34,18 +35,41 @@ app.get('/main', (req, res) => {
 
 
 app.post('/translate', bodyParser.json(), async (req, res) => {
-    console.log(req.body);
-    let fet = await fetch(`${TR_API_URL}/translate`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'applications/json'
-        },
-        body: JSON.stringify({translate : req.body.translate})
-    })
+    try {
+        console.log(req.body);
+        let fet = await fetch(`${TR_API_URL}/translate`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'applications/json'
+            },
+            body: JSON.stringify({translate: req.body.translate.replace(/\n/g, '     ')})
+        })
 
-    let rep = await fet.json();
+        let rep = await fet.json();
 
-    res.json(rep.response);
+        res.json(rep.response.replace(/⠀⠀⠀⠀⠀/g, '\n'));
+    } catch (e) {
+        res.json('ERROR - SORRY ABOUT THAT');
+    }
+});
+
+app.post('/translate1', bodyParser.json(), async (req, res) => {
+    try {
+        console.log(req.body);
+        let fet = await fetch(`${TR_API_URL}/translate1`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'applications/json'
+            },
+            body: JSON.stringify({translate: req.body.translate.replace(/\n/g, '     ')})
+        })
+
+        let rep = await fet.json();
+
+        res.json(rep.response);
+    } catch (e) {
+        res.json('ERROR - SORRY ABOUT THAT');
+    }
 });
 
 app.post('/getPDF', bodyParser.json(), async (req, res) => {
